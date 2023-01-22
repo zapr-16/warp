@@ -43,6 +43,11 @@ jobs:
           black starknet-testnet/ --check --verbose --diff --color
           find warplib/ -iname *.cairo -exec cairo-format -c {} +
 
+  spellchecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: spelling.yml
+
   build:
     runs-on: ubuntu-latest
     steps:
