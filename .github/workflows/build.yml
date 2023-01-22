@@ -46,7 +46,7 @@ jobs:
   spellchecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: spelling.yml
+      - uses: ./spelling.yml
 
   build:
     runs-on: ubuntu-latest
