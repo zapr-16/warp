@@ -1,4 +1,4 @@
-name: Check Spelling
+name: spelling
 
 # Comment management is handled through a secondary job, for details see:
 # https://github.com/check-spelling/check-spelling/wiki/Feature%3A-Restricted-Permissions

@@ -43,6 +43,14 @@ jobs:
           black starknet-testnet/ --check --verbose --diff --color
           find warplib/ -iname *.cairo -exec cairo-format -c {} +
 
+  spelling:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: verify checkout
+        run: 'ls -lsa'
+
       - name: Check spelling
         uses: ./.github/actions/spelling
 
