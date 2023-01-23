@@ -53,7 +53,7 @@ jobs:
           ls -lsa ./.github/actions
 
       - name: Check spelling
-        uses: ./.github/actions/spelling/spelling.yml
+        uses: ./.github/actions/spelling
 
   build:
     runs-on: ubuntu-latest
