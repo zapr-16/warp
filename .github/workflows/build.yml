@@ -43,6 +43,17 @@ jobs:
           black starknet-testnet/ --check --verbose --diff --color
           find warplib/ -iname *.cairo -exec cairo-format -c {} +
 
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: rojopolis/spellcheck-github-actions@0.29.0
+        name: Spellcheck
+        with:
+          task_name: JavaScript
+          source_files: src/cli.ts
+
   build:
     runs-on: ubuntu-latest
     steps:
