@@ -39,15 +39,7 @@ on:
       - '**'
     tags-ignore:
       - '**'
-  pull_request_target:
-    branches:
-      - '**'
-    tags-ignore:
-      - '**'
-    types:
-      - 'opened'
-      - 'reopened'
-      - 'synchronize'
+  pull_request:
   issue_comment:
     types:
       - 'created'
