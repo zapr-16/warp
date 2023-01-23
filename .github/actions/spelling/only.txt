@@ -1,0 +1,2 @@
+# Only process cli.ts
+cli.ts
